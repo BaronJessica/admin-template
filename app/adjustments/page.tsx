@@ -1,12 +1,15 @@
+"use client";
 import Layout from "../components/template/Layout";
+import useAppData from "../data/hook/useAppData";
 
 export default function Adjustments() {
+  const { toggleTheme } = useAppData();
   return (
     <Layout
       title="Ajustes & Configurações"
       subTitle="Personalize o sistema aqui!"
     >
-      <h3>content</h3>
+      <button onClick={toggleTheme}>alternar tema</button>
     </Layout>
   );
 }
