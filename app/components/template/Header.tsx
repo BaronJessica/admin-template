@@ -13,7 +13,7 @@ export default function Header(props: HeaderProps) {
     <div className={`flex`}>
       <Title title={props.title} subTitle={props.subTitle} />
       <div className={`flex flex-grow justify-end`}>
-        <ToggleButton theme={theme ?? ""} toggleTheme={toggleTheme} />
+        <ToggleButton theme={theme ?? ""} toggleTheme={!!toggleTheme} />
       </div>
     </div>
   );
